@@ -53,6 +53,7 @@ export class AmbassadeursComponent implements OnInit {
     this.filteredAmbassadeurs = this.ambassadeurs.filter(element => {
       return (!nameFilter || element.name.toLowerCase().indexOf(nameFilter) !== -1) && (!countryFilter || element.country.toLowerCase().indexOf(countryFilter) !== -1) && (!this.filter.year || element.year === this.filter.year);
     });
+    this.ambassadeursService.drawChart(this.filteredAmbassadeurs);
   }
 
 }
