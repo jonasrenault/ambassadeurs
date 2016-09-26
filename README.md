@@ -1,31 +1,26 @@
-# Ambassadeurs
+# Ambassadeurs: Angular2 Data web app
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.11-webpack.8.
+This is an example application demonstrating a simple Angular2 web app which fetches data, filters it and displays a chart with Plotly.js
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The data used by this application is the list of french ambassadors to foreign countries by year of appointment. This list is filtered by year, country or name. The chart displayed shows the proportion of ambassadors with a [nobiliary particle](https://en.wikipedia.org/wiki/Nobiliary_particle) in their name for each year.
 
-## Code scaffolding
+# Tutorial
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+A step by step tutorial is available on the project's wiki: [Tutorial](https://github.com/jonasrenault/ambassadeurs/wiki/Tutorial)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli). Check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md) for help on how to run or build the application.
 
-## Running unit tests
+# Sources
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* The original idea came from [Baptiste Coulmont's](http://coulmont.com/) blog post : [Baptiste Coulmont, "Ectoplasme ! Moule à gaufre ! Ambassadeur à particule !"](http://coulmont.com/blog/2016/05/20/ambassadeurs/)
 
-## Running end-to-end tests
+* Data came from the [Open Data initiative of the French Governement](https://www.data.gouv.fr/fr/datasets/liste-chronologique-des-ambassadeurs-de-france-a-l-etranger-depuis-1945/).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
+# Live Demo
 
-## Deploying to Github Pages
+[Live Demo](https://jonasrenault.github.io/ambassadeurs/)
 
-Run `ng github-pages:deploy` to deploy to Github Pages.
+# License
 
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Released under the [The MIT License](https://opensource.org/licenses/MIT).
