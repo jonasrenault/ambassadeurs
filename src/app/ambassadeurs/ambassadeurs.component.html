@@ -1,7 +1,14 @@
 <div class="container">
 
+  <form class="form-filter">
+    <h3 class="form-signin-heading">Filter list</h3>
+    <input type="text" class="form-control" placeholder="Name" autofocus [value]="filter.name" [formControl]="nameControl">
+    <input type="text" class="form-control" placeholder="Country" [value]="filter.country" [formControl]="countryControl">
+    <input type="number" maxlength="4" min="0" class="form-control" placeholder="Year" [value]="filter.year" [formControl]="yearControl">
+  </form>
+
   <ul class="list-group ambassadeurs">
-    <li *ngFor="let ambassadeur of ambassadeurs" class="list-group-item">
+    <li *ngFor="let ambassadeur of filteredAmbassadeurs" class="list-group-item">
       <span class="name">{{ambassadeur.name}}</span>
       <span class="detail">{{ambassadeur.year}} - {{ambassadeur.country}}</span>
     </li>
