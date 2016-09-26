@@ -9,7 +9,7 @@ export class AmbassadeursService {
 
   constructor(private http: Http) { }
 
-  private ambassadeursUrl = 'app/ambassadeurs.json';  // URL to web api
+  private ambassadeursUrl = 'assets/ambassadeurs.json';  // URL to web api
 
   getAmbassadeurs(): Promise<Ambassadeur[]> {
     return this.http.get(this.ambassadeursUrl)
